@@ -7,27 +7,29 @@ import Favorites from "./pages/Favorites";
 import Details from "./pages/Details";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/layout/Layout";
+import Slider from "./pages/Slider";
 
 function App() {
   return (
-    <div style={
-      {
+    <div
+      style={{
         height: "100vh",
-        overflow: "auto"
-      }
-    }
-    onScroll={(e)=>{
-      console.log(e?.target?.scrollTop);
-    }}>
+        overflow: "auto",
+      }}
+      onScroll={(e) => {
+        console.log(e?.target?.scrollTop);
+      }}
+    >
       <Layout>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="popular" element={<Popular />} />
-        <Route path="favorites" element={<Favorites />} />
-        <Route path="games/:id" element={<Details />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="a" element={<Slider />} />
+          <Route path="popular" element={<Popular />} />
+          <Route path="favorites" element={<Favorites />} />
+          <Route path="games/:id" element={<Details />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Layout>
     </div>
   );
 }

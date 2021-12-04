@@ -8,6 +8,7 @@ import styles from "./Home.module.css";
 
 import GameList from "../components/games/GameList";
 import Spinner from "../components/ui/Spinner";
+import Slider from "./Slider";
 
 const Home = () => {
   const [filteredGames, setFilteredGames] = useState([]);
@@ -35,9 +36,10 @@ const Home = () => {
 
   return (
     <>
+      <Slider />
       <section>
         <div className="text-center">
-          <h1 className="title">
+          <h1 className="title" style={{ marginTop: "33px" }}>
             Best Free to Play Games for PC and Browser in {currentYear}!
           </h1>
           <p className="text-muted subtitle">
