@@ -6,6 +6,7 @@ import styles from "./Popular.module.css";
 
 import GameList from "../components/games/GameList";
 import Spinner from "../components/ui/Spinner";
+import Slider from "./Slider";
 
 const Popular = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -36,7 +37,8 @@ const Popular = () => {
 
   return (
     <section className={styles.popular}>
-      <h1 className="title">
+      <Slider />
+      <h1 className="title" style={{ marginTop: "33px" }}>
         Top 10 Free{" "}
         <span className={styles.lead}>
           {selectedCategory ? selectedCategory : "To Play"}
