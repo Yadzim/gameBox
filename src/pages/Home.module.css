@@ -14,9 +14,9 @@
   border-radius: 5px;
   overflow-x: hidden;
   margin: 0 auto;
-  transition: .3s linear;
+  transition: 0.3s linear;
 }
-.form label:hover{
+.form label:hover {
   max-width: 500px;
 }
 

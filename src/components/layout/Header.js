@@ -11,9 +11,11 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={`${styles.container} container`}>
-        <NavLink to="/" style={{display:"flex", alignItems:"center"}}>
-          <IoGridOutline className={styles.logo} style={{ color: 'orange'}} />
-          <span style={{marginLeft:10, color:"orange", fontSize:24}}>GameBox</span>
+        <NavLink to="/" style={{ display: "flex", alignItems: "center" }}>
+          <IoGridOutline className={styles.logo} style={{ color: "orange" }} />
+          <span style={{ marginLeft: 10, color: "orange", fontSize: 24 }}>
+            GameBox
+          </span>
         </NavLink>
         <nav className={styles.navigation}>
           <ul>
