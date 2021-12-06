@@ -20,7 +20,8 @@ html {
 
 body {
   height: 100%;
-  background-color: #2a2e33;
+  background-color: #020a18 !important;
+
   color: #aaa;
   font-family: var(--font-primary);
   font-size: 1.6rem;

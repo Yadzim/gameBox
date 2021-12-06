@@ -9,9 +9,7 @@ const Footer = () => {
         <p className="text-muted">
           © {currentYear} Gametis, all rights reserved.
         </p>
-        <p className={styles.created}>
-          Created with by Baxriddin and Azizxon
-        </p>
+        <p className={styles.created}>Created with by Baxriddin and Azizxon</p>
       </div>
     </footer>
   );

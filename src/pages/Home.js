@@ -9,6 +9,7 @@ import styles from "./Home.module.css";
 import GameList from "../components/games/GameList";
 import Spinner from "../components/ui/Spinner";
 import Slider from "./Slider";
+import Footer from "../components/layout/Footer";
 
 const Home = () => {
   const [filteredGames, setFilteredGames] = useState([]);
@@ -39,7 +40,7 @@ const Home = () => {
       <Slider />
       <section>
         <div className="text-center">
-          <h1 className="title" style={{ marginTop: "33px" }}>
+          <h1 className="title" style={{ marginTop: "33px", color: "white" }}>
             Best Free to Play Games for PC and Browser in {currentYear}!
           </h1>
           <p className="text-muted subtitle">
@@ -69,6 +70,7 @@ const Home = () => {
           <GameList items={debouncedSearchTerm ? filteredGames : allGames} />
         )}
       </section>
+      <Footer />
     </>
   );
 };

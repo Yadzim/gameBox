@@ -1,8 +1,12 @@
 .footer {
   margin-top: auto;
-  background: var(--bg-footer);
+  /* background: var(--bg-footer); */
   padding: 2rem 0;
   text-align: center;
+  background-color: #18202c;
+  width: 100%;
+  /* position: absolute;
+  bottom: 0px; */
 }
 
 .created {
