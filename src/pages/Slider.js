@@ -308,62 +308,113 @@
 //     );
 //   }
 // }
-import React, { Component } from "react";
-import { Carousel } from "antd";
-import slider1 from "../img/slide-1.jpg";
-import slider2 from "../img/slide-2.jpg";
-import slider3 from "../img/slide-3.jpg";
-import slider4 from "../img/slide-4.jpg";
-import slider5 from "../img/slide-5.jpg";
-import "antd/dist/antd.css";
 
-export default class Slider extends Component {
-  render() {
-    return (
-      <div>
-        <Carousel
-          autoplay
-          effect="fade"
-          style={{ height: "100vh", margin: " 0 auto", width: "100%" }}
-        >
-          <div>
-            {/* <h3 >1</h3> */}
-            <img
-              src={slider1}
-              alt=""
-              style={{ height: "100vh", width: "100%" }}
-            />
-          </div>
-          <div>
-            {/* <h3 >2</h3> */}
-            <img
-              src={slider2}
-              alt=""
-              style={{ height: "100vh", width: "100%" }}
-            />
-          </div>
-          <div>
-            {/* <h3 >3</h3> */}
-            <img
-              src={slider3}
-              alt=""
-              style={{ height: "100vh", width: "100%" }}
-            />
-          </div>
-          <div>
-            {/* <h3 >4</h3> */}
-            <img
-              src={slider4}
-              alt=""
-              style={{ height: "100vh", width: "100%" }}
-            />
-          </div>
-          <div>
-            {/* <h3 >4</h3> */}
-            <img src={slider5} alt="" style={{ height: "100vh" }} />
-          </div>
-        </Carousel>
-      </div>
-    );
+
+// #########################################################################################################
+
+
+// import React, { Component } from "react";
+// import { Carousel } from "antd";
+// import slider1 from "../img/slide-1.jpg";
+// import slider2 from "../img/slide-2.jpg";
+// import slider3 from "../img/slide-3.jpg";
+// import slider4 from "../img/slide-4.jpg";
+// import slider5 from "../img/slide-5.jpg";
+// import "antd/dist/antd.css";
+
+// export default class Slider extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <Carousel
+//           autoplay
+//           effect="fade"
+//           style={{ height: "100vh", margin: " 0 auto", width: "100%" }}
+//         >
+//           <div>
+//             {/* <h3 >1</h3> */}
+//             <img
+//               src={slider1}
+//               alt=""
+//               style={{ height: "100vh", width: "100%" }}
+//             />
+//           </div>
+//           <div>
+//             {/* <h3 >2</h3> */}
+//             <img
+//               src={slider2}
+//               alt=""
+//               style={{ height: "100vh", width: "100%" }}
+//             />
+//           </div>
+//           <div>
+//             {/* <h3 >3</h3> */}
+//             <img
+//               src={slider3}
+//               alt=""
+//               style={{ height: "100vh", width: "100%" }}
+//             />
+//           </div>
+//           <div>
+//             {/* <h3 >4</h3> */}
+//             <img
+//               src={slider4}
+//               alt=""
+//               style={{ height: "100vh", width: "100%" }}
+//             />
+//           </div>
+//           <div>
+//             {/* <h3 >4</h3> */}
+//             <img src={slider5} alt="" style={{ height: "100vh" }} />
+//           </div>
+//         </Carousel>
+//       </div>
+//     );
+//   }
+// }
+
+// #########################################################################################################
+
+
+
+import React, { useRef } from 'react'
+import { Parallax, ParallaxLayer} from '@react-spring/parallax'
+import styles from './styles.module.css'
+
+
+const Page = ({ offset, gradient, onClick }) => (
+  <>
+    <ParallaxLayer offset={offset} speed={0.2} onClick={onClick}>
+      <div className={styles.slopeBegin} />
+    </ParallaxLayer>
+
+    <ParallaxLayer offset={offset} speed={0.6} onClick={onClick}>
+      <div className={`${styles.slopeEnd} ${styles[gradient]}`} />
+    </ParallaxLayer>
+
+    <ParallaxLayer className={`${styles.text} ${styles.number}`} offset={offset} speed={0.3}>
+      <span>0{offset + 1}</span>
+    </ParallaxLayer>
+  </>
+)
+
+export default function Slider() {
+  const parallax = useRef(null)
+
+  const scroll = (to) => {
+    if (parallax.current) {
+      parallax.current.scrollTo(to)
+    }
   }
+  return (
+    <div style={{ background: '#dfdfdf' }}>
+      <Parallax className={styles.container} ref={parallax} pages={5} horizontal>
+        <Page offset={4} gradient="tomato" onClick={() => scroll(0)} />
+        <Page offset={0} gradient="pink" onClick={() => scroll(1)} />
+        <Page offset={1} gradient="teal" onClick={() => scroll(2)} />
+        <Page offset={2} gradient="teal" onClick={() => scroll(3)} />
+        <Page offset={3} gradient="teal" onClick={() => scroll(4)} />
+      </Parallax>
+    </div>
+  )
 }

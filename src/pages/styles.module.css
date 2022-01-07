@@ -1,7 +1,7 @@
 /* $time: 500ms;
 $delay: $time/2;
 $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43); */
-@keyframes heartbeat {
+/* @keyframes heartbeat {
   0% {
     transform: scale(0);
   }
@@ -150,7 +150,6 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43); */
   .slider-content
   .slider-single.preactivede
   .slider-single-image {
-  /* //opacity: 0; */
   transform: translateX(-50%) scale(0);
 }
 .slider-container .slider-content .slider-single.preactive {
@@ -220,7 +219,6 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43); */
   .slider-single
   .proactivede
   .slider-single-image {
-  /* //opacity: 0; */
   transform: translateX(50%) scale(0);
 }
 
@@ -268,7 +266,6 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43); */
   transform: translateY(-50%);
   padding: 20px 15px;
   border-top: 2px solid #fdc84b;
-  /* border-right: 2px solid #fdc84b; */
   border-bottom: 2px solid #fdc84b;
   border-left: 2px solid #fdc84b;
   margin-right: -2px;
@@ -285,9 +282,69 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43); */
   border-top: 2px solid #fdc84b;
   border-right: 2px solid #fdc84b;
   border-bottom: 2px solid #fdc84b;
-  /* border-left: 2px solid #fdc84b; */
   margin-left: -2px;
 }
 .slider-container .not-visible {
   display: none !important;
+} */
+
+
+
+/* ########################################################################### */
+
+
+
+.container > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.text {
+  pointer-events: none;
+  justify-content: start !important;
+  font-family: 'Kanit', sans-serif;
+  line-height: 0px;
+  text-transform: uppercase;
+}
+
+.number {
+  font-size: 300px;
+  color: #545864;
+}
+
+.number span {
+  display: inline-block;
+  position: relative;
+}
+
+.slopeBegin {
+  background-color: #20232f;
+  clip-path: polygon(20% 0, 70% 0, 50% 100%, 0% 100%);
+}
+
+.slopeEnd {
+  clip-path: polygon(70% 0, 100% 0, 80% 100%, 50% 100%);
+}
+
+.slopeBegin,
+.slopeEnd {
+  position: absolute;
+  width: 170%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.pink {
+  background: linear-gradient(to right, deeppink 0%, coral 100%);
+}
+
+.teal {
+  background: linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%);
+}
+
+.tomato {
+  background: linear-gradient(to right, tomato 0%, gold 100%);
+}
+
+

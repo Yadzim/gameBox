@@ -37,7 +37,6 @@ const Popular = () => {
 
   return (
     <section className={styles.popular}>
-      <Slider />
       <h1 className="title" style={{ marginTop: "33px" }}>
         Top 10 Free{" "}
         <span className={styles.lead}>

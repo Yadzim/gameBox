@@ -37,8 +37,11 @@ const Home = () => {
 
   return (
     <>
+      <div >
       <Slider />
-      <section>
+      </div>
+      <div style={{clear:"both"}}></div>
+      <div>
         <div className="text-center">
           <h1 className="title" style={{ marginTop: "33px", color: "white" }}>
             Best Free to Play Games for PC and Browser in {currentYear}!
@@ -61,7 +64,7 @@ const Home = () => {
         {debouncedSearchTerm && filteredGames.length === 0 && (
           <p className="text-center">Sorry, no games found :(</p>
         )}
-      </section>
+      </div>
 
       <section className={styles.games_content}>
         {isPending && <Spinner />}

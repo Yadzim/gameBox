@@ -23,7 +23,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="a" element={<Slider />} />
+          {/* <Route path="a" element={<Slider />} /> */}
           <Route path="popular" element={<Popular />} />
           <Route path="favorites" element={<Favorites />} />
           <Route path="games/:id" element={<Details />} />
