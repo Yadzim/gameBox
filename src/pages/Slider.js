@@ -407,7 +407,7 @@ export default function Slider() {
     }
   }
   return (
-    <div style={{ background: '#dfdfdf' }}>
+    <div style={{ background: '#dfdfdf', position: "relative", height: "100vh" }}>
       <Parallax className={styles.container} ref={parallax} pages={5} horizontal>
         <Page offset={4} gradient="tomato" onClick={() => scroll(0)} />
         <Page offset={0} gradient="pink" onClick={() => scroll(1)} />

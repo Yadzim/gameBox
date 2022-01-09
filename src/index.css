@@ -3,7 +3,8 @@
 :root {
   --font-primary: "Nunito Sans", sans-serif;
   --font-secondary: "Inter", sans-serif;
-  --bg-header: #272b30;
+  /* --bg-header: #272b30; */
+  --bg-header: #17212B;
   --bg-footer: #1c1e22;
 }
 

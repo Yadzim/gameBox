@@ -4,19 +4,30 @@
   left: 0;
   width: 100%;
   min-height: 80px;
-  background-color: var(--bg-header);
+  box-shadow: 0 2px 8rem rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  background-color: #2F70A5;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 55% 100%, 52% 90%, 26% 90%, 24% 100%, 0 100%);
+}
+.border{
+  position: absolute;
   padding: 1rem 0;
   display: flex;
   align-items: center;
-  /* box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); */
-  box-shadow: 0 2px 8rem rgba(0, 0, 0, 0.5);
-  z-index: 1000;
+  top: 3px;
+  bottom: 3px;
+  right: 0;
+  left: 0;
+  background-color: var(--bg-header);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 55% 100%, 52% 90%, 26% 90%, 24% 100%, 0 100%);
 }
 
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* mask:paint(polygon-border); */
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 85% 100%, 80% 90%, 60% 90%, 54% 100%, 15% 100%, 10% 90%, 0 90%); */
 }
 
 .logo {

@@ -1,10 +1,22 @@
 .card {
-  background: #18202c;
-
-  border-radius: 5px;
-  overflow-x: hidden;
+  position: relative;
+  /* background: #18202c; */
+  background: #17212B;
+  /* overflow-x: hidden; */
   box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.1);
   transition: 0.3s linear;
+  clip-path: polygon(5% 70%, 0 65%, 0 20%, 10% 0, 100% 0, 100% 65%, 95% 70%, 95% 85%, 100% 90%, 100% 100%, 0 100%, 0 90%, 5% 85%);
+}
+.card::after{
+  content: '';
+  width: 20px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  clip-path: polygon(0 70%, 80% 65%, 80% 0, 100% 0, 100% 65%, 20% 70%, 20% 85%, 100% 90%, 100% 100%, 80% 100%, 80% 90%, 0 85%);
+  background-color: #2F70A5;
+  z-index: 11;
 }
 .card:hover {
   box-shadow: 3px 5px 18px rgba(0, 0, 0, 0.6);
