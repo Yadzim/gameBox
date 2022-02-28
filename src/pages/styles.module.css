@@ -300,6 +300,10 @@ $mode: cubic-bezier(0.17, 0.67, 0.55, 1.43); */
   justify-content: center;
 }
 
+.container::-webkit-scrollbar {
+  height: 0px;
+}
+
 .text {
   pointer-events: none;
   justify-content: start !important;

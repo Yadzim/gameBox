@@ -38,8 +38,8 @@ html {
 
 body {
   height: 100%;
-  /* background-color: #020a18 !important; */
-  background-image: url(./img/back3.jpg);
+  background-color: #020a18 !important;
+  /* background-image: url(./img/back3.jpg); */
   background-size: cover;
   /* background-attachment: fixed; */
   /* background-size: 100% auto; */
@@ -60,6 +60,21 @@ body::after{
   /* background-color: rgba(0, 0, 0, .6); */
   z-index: -1;
 }
+
+/* ------ scroll style ------ */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background: #545864;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #17212B;
+}
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+} */
 
 #root {
   height: 100%;

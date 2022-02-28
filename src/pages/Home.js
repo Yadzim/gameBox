@@ -38,7 +38,7 @@ const Home = () => {
   return (
     <>
       <div >
-      <Slider />
+      {/* <Slider /> */}
       </div>
       <div style={{clear:"both"}}></div>
       <div>

@@ -10,13 +10,13 @@
   display: block;
   position: relative;
   min-height: 5rem;
-  max-width: 450px;
+  max-width: 500px;
   border-radius: 5px;
   overflow-x: hidden;
   margin: 0 auto;
   transition: 0.3s linear;
 }
-.form label:hover {
+.form label:active {
   max-width: 500px;
 }
 
@@ -37,7 +37,7 @@
   font-size: 1.5rem;
 }
 
-.input:focus {
+.input:hover {
   outline: none;
   background-color: #181a1d;
 }
