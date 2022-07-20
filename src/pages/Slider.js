@@ -409,10 +409,10 @@ export default function Slider() {
   return (
     <div style={{ background: '#dfdfdf', position: "relative", height: "100vh" }}>
       <Parallax className={styles.container} ref={parallax} pages={5} horizontal>
-        <Page offset={4} gradient="tomato" onClick={() => scroll(0)} />
-        <Page offset={0} gradient="pink" onClick={() => scroll(1)} />
-        <Page offset={1} gradient="teal" onClick={() => scroll(2)} />
-        <Page offset={2} gradient="teal" onClick={() => scroll(3)} />
+        <Page offset={4} gradient="teal" onClick={() => scroll(0)} />
+        <Page offset={0} gradient="teal" onClick={() => scroll(1)} />
+        <Page offset={1} gradient="tomato" onClick={() => scroll(2)} />
+        <Page offset={2} gradient="pink" onClick={() => scroll(3)} />
         <Page offset={3} gradient="teal" onClick={() => scroll(4)} />
       </Parallax>
     </div>

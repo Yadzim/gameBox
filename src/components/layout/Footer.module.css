@@ -3,7 +3,7 @@
   /* background: var(--bg-footer); */
   padding: 2rem 0;
   text-align: center;
-  background-color: #18202c;
+  background-color: var(--bg-footer);
   width: 100%;
   /* position: absolute;
   bottom: 0px; */

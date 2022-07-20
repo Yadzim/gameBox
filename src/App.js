@@ -8,6 +8,7 @@ import Details from "./pages/Details";
 import NotFound from "./pages/NotFound";
 import Layout from "./components/layout/Layout";
 import Slider from "./pages/Slider";
+import Background from "./components/ui/back";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
+      <Background/>
     </div>
   );
 }
