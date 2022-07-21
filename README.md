@@ -1,6 +1,6 @@
-<h1 align="center">Gametis</h1>
+<h1 align="center">GameBox</h1>
 
-Gametis adalah sebuah aplikasi web sederhana untuk mencari game gratis yg keren dan menarik yang dapat di mainkan di platform PC & Browser. User Interface (UI) nya simple, elegan, modern dan responsive.
+GameBox adalah sebuah aplikasi web sederhana untuk mencari game gratis yg keren dan menarik yang dapat di mainkan di platform PC & Browser. User Interface (UI) nya simple, elegan, modern dan responsive.
 
 ![screenshot](https://i.ibb.co/ZdM3H0h/gametis.png)
 
@@ -9,14 +9,12 @@ Gametis adalah sebuah aplikasi web sederhana untuk mencari game gratis yg keren 
 Untuk mengkloning dan menjalankan aplikasi ini, pastikan bahwa [Git](https://git-scm.com) dan [Node.js](https://nodejs.org/en/download/) sudah terinstal di komputer anda, lalu jalankan command line berikut:
 
 ```bash
-# Clone this repository
-$ git clone https://github.com/indraAK/gametis.git
 
 # Install dependencies
-$ npm install
+$ yarn install
 
 # Run the app
-$ npm start
+$ yarn start
 ```
 
 ## User Stories
