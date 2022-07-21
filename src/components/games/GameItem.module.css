@@ -23,7 +23,7 @@
   /* background: #17212B; */
   background: var(--bg-card);
   border-radius: 5px;
-  border: 1px solid var(--line-blue);
+  /* border: 1px solid var(--line-blue); */
   box-shadow: 2px 2px 5px rgba(2, 106, 204, 0.5);
   overflow: hidden;
 }
