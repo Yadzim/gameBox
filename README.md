@@ -2,7 +2,7 @@
 
 GameBox adalah sebuah aplikasi web sederhana untuk mencari game gratis yg keren dan menarik yang dapat di mainkan di platform PC & Browser. User Interface (UI) nya simple, elegan, modern dan responsive.
 
-![screenshot](https://i.ibb.co/ZdM3H0h/gametis.png)
+![screenshot]()
 
 ## How To Use
 
