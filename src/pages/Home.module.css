@@ -17,7 +17,7 @@
   transition: 0.3s linear;
 }
 .form label:active {
-  max-width: 500px;
+  width: 500px;
 }
 
 .input {
@@ -40,6 +40,10 @@
 .input:hover {
   outline: none;
   background-color: #181a1d;
+}
+
+.input:focus {
+  width: 120%;
 }
 
 .input::placeholder {
